@@ -1,0 +1,57 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script>
+<script>
+$(document).ready(function(){
+
+$('#service-selector').on('change', function() {
+
+if(this.value=="findingdoula") { $('#findingdoula_textbox').show(); } else { $('#findingdoula_textbox').hide(); }
+if(this.value=="somethingelse") { $('#somethingelse_textbox').show(); } else { $('#somethingelse_textbox').hide(); }
+});
+
+});
+</script>
+<style>
+#findingdoula_textbox p, #somethingelse_textbox p {font-size:20px;text-align:center;padding:20px;}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script>
+<script>
+$(document).ready(function(){
+
+$('#service-selector').on('change', function() {
+
+if(this.value=="findingdoula") { $('#findingdoula_textbox').show(); } else { $('#findingdoula_textbox').hide(); }
+if(this.value=="somethingelse") { $('#somethingelse_textbox').show(); } else { $('#somethingelse_textbox').hide(); }
+});
+
+});
+</script>
+<style>
+#findingdoula_textbox p, #somethingelse_textbox p 
+	{
+	font-size:20px;
+	text-align:center;
+	padding:5px;
+	margin-bottom:0px;
+}
+#findingdoula_textbox, #somethingelse_textbox {
+	background-color:#FBFFEB;
+	border-radius:5px;
+	border: 1px solid #F8CF40;
+	padding:20px;
+}
+#service-content h3 {font-family:Questrial;text-align:center;padding:0px;}
+#service-content {margin-top:20px;}
+#service-selector {font-size:25px;padding:20px;}
+</style>
+
+
+<select name="service-selector" id="service-selector">
+	<option>I need help with...</option>
+    <option value="findingdoula">..finding the right Doula as a Teen mom</option>
+	<option value="somethingelse">...some other option or idea here</option>
+</select>
+<div id="service-content">
+<div style="display:none" id="findingdoula_textbox"><h3>Finding the right Doula as a teen mom</h3><p>What you should do this that and this and that. We can help you with this and that.</p></div>
+<div style="display:none" id="somethingelse_textbox"><h3>Some other title here</h3><p>What you should do this that and this and that. We can help you with this and that.</p></div>
+</div>
